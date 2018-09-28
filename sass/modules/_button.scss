@@ -1,0 +1,31 @@
+.custom-button {
+    padding: 0.85em 1em;
+    margin: 0 0 1rem 0;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+.custom-button.expanded {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.custom-button.large {
+    font-size: 1.05rem;
+}
+
+.custom-button.larger {
+    font-size: 1.25rem;
+}
+
+.custom-button.white-button {
+    background: transparent;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+.custom-button.white-button:hover {
+    background-color: $background-color;
+    color: $text-color !important;
+}

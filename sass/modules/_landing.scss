@@ -1,0 +1,117 @@
+* {
+    color: $text-color;
+}
+
+.grid-frame {
+    z-index: 1;
+}
+
+@media not all and (max-width: $mobile-size) {
+    .section {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    #section-1 {
+        padding-bottom: 50px;
+    }
+    #section-2, #section-3, #section-4 {
+        padding-top: 50px;
+    }
+}
+
+.background-image {
+    position: fixed;
+    max-width: none;
+    // top: 0;
+    // width: 100%;
+    z-index: -100;
+}
+
+body#landing .section * {
+    color: $background-color;
+}
+
+#section-2, #section-4 {
+    background-color: #83c64b;
+}
+
+
+
+.hero-centered {
+    // @media screen and (max-width: $desktop-size) {
+        padding-bottom: 150px;
+    // }
+    // @media screen and (max-width: $mobile_size) {
+    //     padding-bottom: 25px;
+    // }
+    // @media screen and (min-width: $tablet-size) {
+    //     padding-bottom: 75px;
+    // }
+}
+
+h1.hero-header {
+    @media screen and (max-width: $tablet-size) {
+    }
+    @media screen and (max-width: $mobile_size) {
+    }
+}
+
+#support-info {
+    width: 85%;
+    height: 85%;
+    padding: 2.5%;
+    h1, h2, h3, h4, h5, h6, p {
+        // color: $background-color;
+    }
+}
+
+// .bracketed {
+//     position: relative;
+
+
+//     .bracketed::after, .bracketed::before {
+//         content: "";
+//         position: absolute;
+//         top: -25%;
+//         bottom: 0;
+//         height: 150%;
+//         width: 35%;
+//         // background-color: red;
+//     }
+
+//     .bracketed::before {
+//         left: 0;
+//     }
+
+//     .bracketed::after {
+//         background-image: url("../imgs/bracket-parts/bracket-right.png");
+//         background-repeat: no-repeat;
+//         background-size: 100% 100%;
+//         right: 0;
+//     }
+
+    
+// }
+
+// .bracketed {
+//     position: relative;
+// }
+
+// .bracketed:before {
+//   content: '[';
+//   color: #ffb1bb;
+//   font-size: 10vmin;
+//   line-height: 100%;
+//   position: absolute;
+//   left: 0;
+//   padding-right: 10px;
+// }
+// .bracketed:after {
+//   content: ']';
+//   color: #ffb1bb;
+//   font-size: 10vmin;
+//   position: absolute;
+//   right: 0;
+//   padding-left: 10px;
+// }

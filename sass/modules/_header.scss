@@ -1,0 +1,66 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    padding: 4.5px;
+
+
+    // max-height: 450px;
+
+    // @include breakpoint(medium only) {
+    //     height: 100px;
+    // }
+}
+
+.logo {
+    margin: 1%;
+    float: left;
+    
+    width: 105px;
+    height: 105px;
+
+    @media screen and (max-width: $tablet-size) {
+        width: 13.5%;
+        height: 13.5%;
+    }
+    @media screen and (max-width: $mobile_size) {
+        visibility: hidden;
+    }
+}
+
+#hamburger {
+    cursor: pointer;
+    float: right;
+    width: 45px;
+    height: 45px;
+    margin-right: 4.5%;
+    @media screen and (max-width: $mobile_size) {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.77);
+    padding-right: 4.5%;
+
+    ul {
+        list-style-type:none;
+
+        li a {
+            color: $background-color;
+            font-size: 7vmin;
+        }
+        li a.minor {
+            color: $contrast-two;
+            font-size: 5vmin;
+        }
+        
+    }
+}
