@@ -115,6 +115,9 @@ a {
 * {
   color: #3d495a; }
 
+body {
+  overflow-y: hidden; }
+
 .grid-frame {
   z-index: 1; }
 
