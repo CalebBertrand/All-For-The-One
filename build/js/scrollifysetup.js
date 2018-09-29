@@ -5,13 +5,15 @@ $(function() {
 			easing: "easeOutExpo",
 			before:function(i) {
 				if (i >= 4) {
-					$(".background-image").attr("src", "imgs/buildingplans.png");
+					$("#building").show();
+					$("#collage").hide();
 				}
 				console.log(i);
 			},
 			after:function(i) {
 				if (i <= 3) {
-					$(".background-image").attr("src", "imgs/AFTObackground1.jpg");
+					$("#building").hide();
+					$("#collage").show();
 				}
 				console.log(i);
 				

@@ -38,6 +38,7 @@ $(document).ready(function () {
     
     ToggleMenu();
     resizeBackground();
+    $("#building").hide();
 
     $("#hamburger, #x, #menu a").click(function() {
         ToggleMenu();
