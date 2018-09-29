@@ -37,7 +37,7 @@ body#landing .section * {
 }
 
 #section-2, #section-4 {
-    background-color: #83c64b;
+    background-color: $contrast-one;
 }
 
 
@@ -61,13 +61,10 @@ h1.hero-header {
     }
 }
 
-#support-info {
-    width: 85%;
-    height: 85%;
-    padding: 2.5%;
-    h1, h2, h3, h4, h5, h6, p {
-        // color: $background-color;
-    }
+.circle-image {
+    border: 10px solid $contrast-one;
+    border-radius: 100%;
+    max-width: 55%;
 }
 
 // .bracketed {

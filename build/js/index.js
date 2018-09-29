@@ -13,7 +13,7 @@ $(document).ready(function () {
         }
         var percentDownScreen = $(document).scrollTop() / $(document).height();
         
-        $(".background-image").css("top", 0 - percentDownScreen * differenceFromScreenToImage * 3);
+        $(".background-image").css("top", 0 - percentDownScreen * differenceFromScreenToImage * 1.25);
     });
 
     function resizeBackground() {
@@ -43,7 +43,7 @@ $(document).ready(function () {
         ToggleMenu();
     });
 
-    $(".fullscreen").height(window.innerHeight);
+    $(".fullscreen").css("min-height", window.innerHeight);
     $("#menu").css("padding-top", $("header").height());
 
     var mobile = (WURFL.form_factor != 'Desktop' && WURFL.form_factor != 'Tablet');
@@ -75,7 +75,7 @@ $(document).ready(function () {
 
         resizeBackground();
 
-        $(".fullscreen").height(window.innerHeight);
+        $(".fullscreen").css("min-height", window.innerHeight);
         $("#menu").css("padding-top", $("header").height() + 45);
 
         if (mobile || window.innerWidth < 479) {

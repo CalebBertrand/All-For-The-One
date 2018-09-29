@@ -95,7 +95,7 @@ body { margin: 0;
             font-size: 1.3rem;
         }
         @media screen and (max-width: $mobile_size) {
-            font-size: 0.9rem;
+            font-size: 1.1rem;
         }
     }
 
@@ -139,6 +139,18 @@ a { color: $contrast-one; }
 
 .padlight {
     padding: 5px;
+}
+
+.padheavy {
+    padding: 20px;
+}
+
+.padlightpercent {
+    padding: 1%;
+}
+
+.padheavypercent {
+    padding: 3.5%;
 }
 
 .block {

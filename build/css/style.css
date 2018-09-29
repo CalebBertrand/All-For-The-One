@@ -70,13 +70,13 @@ body {
         font-size: 1.3rem; } }
     @media screen and (max-width: 479px) {
       body h6 {
-        font-size: 0.9rem; } }
+        font-size: 1.1rem; } }
 
 ul {
   list-style-type: none; }
 
 a {
-  color: #3a7fe3; }
+  color: #83c64b; }
 
 .bigger {
   font-size: 1.2em; }
@@ -108,6 +108,15 @@ a {
 
 .padlight {
   padding: 5px; }
+
+.padheavy {
+  padding: 20px; }
+
+.padlightpercent {
+  padding: 1%; }
+
+.padheavypercent {
+  padding: 3.5%; }
 
 .block {
   background-color: transparent; }
@@ -145,10 +154,10 @@ body#landing .section * {
 .hero-centered {
   padding-bottom: 150px; }
 
-#support-info {
-  width: 85%;
-  height: 85%;
-  padding: 2.5%; }
+.circle-image {
+  border: 10px solid #83c64b;
+  border-radius: 100%;
+  max-width: 55%; }
 
 header {
   position: fixed;
@@ -194,7 +203,7 @@ header {
       color: #f5f6f8;
       font-size: 7vmin; }
     #menu ul li a.minor {
-      color: #c4c4c4;
+      color: #bdd840;
       font-size: 5vmin; }
 
 .custom-button {

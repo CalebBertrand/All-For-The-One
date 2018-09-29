@@ -7,7 +7,8 @@ $(function() {
 
 			},
 			after:function(i) {
-				
+
 			},
+			setHeights: true
 		});
 	});
