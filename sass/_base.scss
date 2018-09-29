@@ -154,9 +154,12 @@ a { color: $contrast-one; }
     padding: 3.5%;
 }
 
-// .block {
-//     // background-color: rgba(254,254,254, 0.93);
-//     background-color: transparent;
-//     // box-shadow: 10px 10px 75px 0px rgba(44, 44, 44, 0.8);
-// }
- 
+strong {
+    font-weight: 800;
+}
+
+strong.bracket {
+    font-weight: 600;
+    font-size: 1.2em;
+    // letter-spacing: 5px;
+}
