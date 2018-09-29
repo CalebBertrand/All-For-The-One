@@ -46,10 +46,9 @@ $(document).ready(function () {
 
     $(".fullscreen").css("min-height", window.innerHeight);
     $("#menu").css("padding-top", $("header").height());
+    
 
-    var mobile = (WURFL.form_factor != 'Desktop' && WURFL.form_factor != 'Tablet');
-
-    if (mobile || window.innerWidth < 479) {
+    if (WURFL.is_mobile) {
         $.scrollify.disable();
     }
 
@@ -59,12 +58,5 @@ $(document).ready(function () {
 
         $(".fullscreen").css("min-height", window.innerHeight);
         $("#menu").css("padding-top", $("header").height() + 45);
-
-        if (mobile || window.innerWidth < 479) {
-        } else {
-            if (!mobile) {
-                $.scrollify.enable();
-            }
-        }
     });
 }); 

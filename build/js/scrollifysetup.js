@@ -8,14 +8,12 @@ $(function() {
 					$("#building").show();
 					$("#collage").hide();
 				}
-				console.log(i);
 			},
 			after:function(i) {
 				if (i <= 3) {
 					$("#building").hide();
 					$("#collage").show();
 				}
-				console.log(i);
 				
 			},
 			setHeights: false
