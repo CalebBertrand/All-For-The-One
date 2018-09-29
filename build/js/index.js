@@ -1,6 +1,6 @@
 $(document).ready(function () {
     
-    var backgroundOffset = 0.1;
+    var backgroundOffset = 0.08;
 
     $(document).scroll(function() {
 

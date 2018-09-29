@@ -5,6 +5,7 @@
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,500i,800,800i");
 @media print, screen and (min-width: 40em) {
   .reveal, .reveal.tiny, .reveal.small, .reveal.large {
     right: auto;
@@ -157,7 +158,10 @@ body#landing .section * {
 .circle-image {
   border: 10px solid #83c64b;
   border-radius: 100%;
-  max-width: 55%; }
+  max-width: 60%; }
+  @media screen and (max-width: 767px) {
+    .circle-image {
+      max-width: 80%; } }
 
 header {
   position: fixed;

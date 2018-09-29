@@ -64,7 +64,10 @@ h1.hero-header {
 .circle-image {
     border: 10px solid $contrast-one;
     border-radius: 100%;
-    max-width: 55%;
+    max-width: 60%;
+    @media screen and (max-width: $tablet-size) {
+        max-width: 80%;
+    }
 }
 
 // .bracketed {
