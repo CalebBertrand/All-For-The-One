@@ -158,10 +158,10 @@ body#landing .section * {
 .circle-image {
   border: 10px solid #83c64b;
   border-radius: 100%;
-  max-width: 60%; }
+  max-width: 75%; }
   @media screen and (max-width: 767px) {
     .circle-image {
-      max-width: 80%; } }
+      max-width: 95%; } }
 
 header {
   position: fixed;
