@@ -64,7 +64,7 @@ h1.hero-header {
 .circle-image {
     border: 10px solid $contrast-one;
     border-radius: 100%;
-    max-width: 75%;
+    max-width: 65%;
     @media screen and (max-width: $tablet-size) {
         max-width: 95%;
     }

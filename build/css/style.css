@@ -85,12 +85,13 @@ a {
 .fullscreen {
   width: 100%;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  min-height: 100vh; }
+  .fullscreen * {
+    height: auto; }
 
 .fullheight {
-  height: 100vh; }
-  .fullheight * {
-    height: auto; }
+  height: 100%; }
 
 .video-container .video {
   min-width: 100%;
@@ -118,9 +119,6 @@ a {
 
 .padheavypercent {
   padding: 3.5%; }
-
-.block {
-  background-color: transparent; }
 
 * {
   color: #3d495a; }
@@ -158,7 +156,7 @@ body#landing .section * {
 .circle-image {
   border: 10px solid #83c64b;
   border-radius: 100%;
-  max-width: 75%; }
+  max-width: 65%; }
   @media screen and (max-width: 767px) {
     .circle-image {
       max-width: 95%; } }
@@ -206,14 +204,14 @@ header {
     text-align: right; }
     #menu ul li a {
       color: #f5f6f8;
-      font-size: 25em;
+      font-size: 3em;
       -webkit-transition: color 0.5s;
       transition: color 0.5s; }
     #menu ul li a:hover {
       color: #bfc5d2; }
     #menu ul li a.minor {
       color: #bdd840;
-      font-size: 15em; }
+      font-size: 2em; }
 
 .custom-button {
   padding: 0.85em 1em;

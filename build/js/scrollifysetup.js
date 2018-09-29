@@ -18,6 +18,6 @@ $(function() {
 				console.log(i);
 				
 			},
-			setHeights: true
+			setHeights: false
 		});
 	});

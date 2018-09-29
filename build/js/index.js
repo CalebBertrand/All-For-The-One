@@ -56,10 +56,6 @@ $(document).ready(function () {
         $('#section-4').css('background-image', "url('imgs/woodwall.jpg')");
     }
 
-    if (WURFL.form_factor == 'Desktop') {
-        $(".section").css("background-attachment", "fixed");
-    }
-
     if (mobile || window.innerWidth < 479) {
         $('.enable-on-mobile').show();
         $('.hide-on-mobile').hide();
