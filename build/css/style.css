@@ -202,10 +202,16 @@ header {
   background-color: rgba(0, 0, 0, 0.77);
   padding-right: 4.5%; }
   #menu ul {
-    list-style-type: none; }
+    list-style-type: none;
+    text-align: right; }
     #menu ul li a {
       color: #f5f6f8;
-      font-size: 7vmin; }
+      font-size: 7vmin;
+      -webkit-transition: color 0.8s, font-size 0.8s;
+      transition: color 0.8s, font-size 0.8s; }
+    #menu ul li a:hover {
+      color: #cacfda;
+      font-size: 7.3vmin; }
     #menu ul li a.minor {
       color: #bdd840;
       font-size: 5vmin; }

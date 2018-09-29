@@ -52,10 +52,16 @@ header {
 
     ul {
         list-style-type:none;
+        text-align: right;
 
         li a {
             color: $background-color;
             font-size: 7vmin;
+            transition: color 0.8s, font-size 0.8s;
+        }
+        li a:hover {
+            color: darken($background-color, 14.5%);
+            font-size: 7.3vmin;
         }
         li a.minor {
             color: $contrast-two;
