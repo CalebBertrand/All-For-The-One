@@ -170,20 +170,15 @@ header {
 
 .logo {
   margin: 1%;
-  float: left;
   width: 105px;
   height: 105px; }
   @media screen and (max-width: 767px) {
     .logo {
-      width: 13.5%;
-      height: 13.5%; } }
-  @media screen and (max-width: 479px) {
-    .logo {
-      visibility: hidden; } }
+      width: 85px;
+      height: 85px; } }
 
 #hamburger {
   cursor: pointer;
-  float: right;
   width: 45px;
   height: 45px;
   margin-right: 4.5%; }
@@ -197,16 +192,19 @@ header {
   top: 0;
   left: 0;
   z-index: 50;
-  background-color: rgba(0, 0, 0, 0.77);
+  background-color: black;
   padding-right: 4.5%; }
   #menu ul {
     list-style-type: none;
     text-align: right; }
     #menu ul li a {
       color: #f5f6f8;
-      font-size: 3em;
+      font-size: 2.6rem;
       -webkit-transition: color 0.5s;
       transition: color 0.5s; }
+      @media screen and (max-width: 767px) {
+        #menu ul li a {
+          font-size: 1.5rem; } }
     #menu ul li a:hover {
       color: #bfc5d2; }
     #menu ul li a.minor {

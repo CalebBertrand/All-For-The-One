@@ -16,23 +16,18 @@ header {
 
 .logo {
     margin: 1%;
-    float: left;
     
     width: 105px;
     height: 105px;
 
     @media screen and (max-width: $tablet-size) {
-        width: 13.5%;
-        height: 13.5%;
-    }
-    @media screen and (max-width: $mobile_size) {
-        visibility: hidden;
+        width: 85px;
+        height: 85px;
     }
 }
 
 #hamburger {
     cursor: pointer;
-    float: right;
     width: 45px;
     height: 45px;
     margin-right: 4.5%;
@@ -47,7 +42,7 @@ header {
     top: 0;
     left: 0;
     z-index: 50;
-    background-color: rgba(0, 0, 0, 0.77);
+    background-color: rgb(0, 0, 0);
     padding-right: 4.5%;
 
     ul {
@@ -56,8 +51,12 @@ header {
 
         li a {
             color: $background-color;
-            font-size: 3em;
+            font-size: 2.6rem;
             transition: color 0.5s;
+
+            @media screen and (max-width: $tablet_size) {
+                font-size: 1.5rem;
+            }
         }
         li a:hover {
             color: darken($background-color, 18%);

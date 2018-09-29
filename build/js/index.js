@@ -40,7 +40,7 @@ $(document).ready(function () {
     resizeBackground();
     $("#building").hide();
 
-    $("#hamburger, #x, #menu").click(function() {
+    $("#hamburger, #x, #menu, .logo").click(function() {
         ToggleMenu();
     });
 
