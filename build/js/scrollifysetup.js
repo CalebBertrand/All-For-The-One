@@ -11,7 +11,7 @@ $(function() {
 			},
 			after:function(i) {
 				if (i <= 3) {
-					$(".background-image").attr("src", "../imgs/AFTObackground1.jpg");
+					$(".background-image").attr("src", "imgs/AFTObackground1.jpg");
 				}
 				console.log(i);
 				
