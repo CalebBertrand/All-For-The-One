@@ -207,11 +207,10 @@ header {
     #menu ul li a {
       color: #f5f6f8;
       font-size: 7vmin;
-      -webkit-transition: color 0.8s, font-size 0.8s;
-      transition: color 0.8s, font-size 0.8s; }
+      -webkit-transition: color 0.5s;
+      transition: color 0.5s; }
     #menu ul li a:hover {
-      color: #cacfda;
-      font-size: 7.3vmin; }
+      color: #bfc5d2; }
     #menu ul li a.minor {
       color: #bdd840;
       font-size: 5vmin; }

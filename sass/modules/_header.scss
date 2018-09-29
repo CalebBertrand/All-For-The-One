@@ -57,11 +57,10 @@ header {
         li a {
             color: $background-color;
             font-size: 7vmin;
-            transition: color 0.8s, font-size 0.8s;
+            transition: color 0.5s;
         }
         li a:hover {
-            color: darken($background-color, 14.5%);
-            font-size: 7.3vmin;
+            color: darken($background-color, 18%);
         }
         li a.minor {
             color: $contrast-two;
