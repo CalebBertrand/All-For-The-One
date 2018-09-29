@@ -56,7 +56,7 @@ header {
 
         li a {
             color: $background-color;
-            font-size: 7vmin;
+            font-size: 25em;
             transition: color 0.5s;
         }
         li a:hover {
@@ -64,7 +64,7 @@ header {
         }
         li a.minor {
             color: $contrast-two;
-            font-size: 5vmin;
+            font-size: 15em;
         }
         
     }
