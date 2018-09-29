@@ -40,7 +40,7 @@ $(document).ready(function () {
     resizeBackground();
     $("#building").hide();
 
-    $("#hamburger, #x, #menu a").click(function() {
+    $("#hamburger, #x, #menu").click(function() {
         ToggleMenu();
     });
 
@@ -48,24 +48,9 @@ $(document).ready(function () {
     $("#menu").css("padding-top", $("header").height());
 
     var mobile = (WURFL.form_factor != 'Desktop' && WURFL.form_factor != 'Tablet');
-    
-    function EnableDesktopImages() {
-        $('#section-1').css('background-image', "url('imgs/AFTObackground1.jpg')");
-        $('#section-2').css('background-image', "url('imgs/bibleswag.jpg')");
-        $('#section-3').css('background-image', "url('imgs/biblestudy.jpg')");
-        $('#section-4').css('background-image', "url('imgs/woodwall.jpg')");
-    }
 
     if (mobile || window.innerWidth < 479) {
-        $('.enable-on-mobile').show();
-        $('.hide-on-mobile').hide();
         $.scrollify.disable();
-        $('#section-1').prepend('<img src="imgs/mobilewoodwall.jpg" class="enable-on-mobile background-image fullheight">');
-    }else{
-        $('.enable-on-mobile').hide();
-        $('.hide-on-mobile').show();
-
-        // EnableDesktopImages();
     }
 
     $(window).resize(function() {
@@ -76,13 +61,8 @@ $(document).ready(function () {
         $("#menu").css("padding-top", $("header").height() + 45);
 
         if (mobile || window.innerWidth < 479) {
-            $('.enable-on-mobile').show();
-            $('.hide-on-mobile').hide();
         } else {
-            $('.enable-on-mobile').hide();
-            $('.hide-on-mobile').show();
             if (!mobile) {
-                // EnableDesktopImages();
                 $.scrollify.enable();
             }
         }
