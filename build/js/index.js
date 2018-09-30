@@ -45,7 +45,7 @@ $(document).ready(function () {
     });
 
     $(".fullscreen").css("min-height", window.innerHeight);
-    $("#menu").css("padding-top", $("header").height());
+    $("#menu").css("padding-top", $("header").height() * 1.2);
     
 
     if (WURFL.is_mobile) {
@@ -57,6 +57,6 @@ $(document).ready(function () {
         resizeBackground();
 
         $(".fullscreen").css("min-height", window.innerHeight);
-        $("#menu").css("padding-top", $("header").height() + 45);
+        $("#menu").css("padding-top", $("header").height() * 1.2);
     });
 }); 

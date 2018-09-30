@@ -173,7 +173,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 100;
-  padding: 4.5px; }
+  padding: 15px; }
 
 .logo {
   margin: 1%;
@@ -188,7 +188,10 @@ header {
   cursor: pointer;
   width: 45px;
   height: 45px;
-  margin-right: 4.5%; }
+  margin-right: 45px; }
+  @media screen and (max-width: 767px) {
+    #hamburger {
+      margin-right: 15px; } }
   @media screen and (max-width: 479px) {
     #hamburger {
       width: 35px;
@@ -199,12 +202,15 @@ header {
   top: 0;
   left: 0;
   z-index: 50;
-  background-color: black;
-  padding-right: 4.5%; }
+  background-color: black; }
   #menu ul {
     list-style-type: none;
     text-align: right;
-    padding-top: 4.5; }
+    margin-right: 60px;
+    margin-top: 30px; }
+    @media screen and (max-width: 767px) {
+      #menu ul {
+        margin-right: 30px; } }
     #menu ul li a {
       color: #f5f6f8;
       font-size: 2.6rem;
