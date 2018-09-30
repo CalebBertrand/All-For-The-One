@@ -49,7 +49,7 @@ $(document).ready(function () {
     
 
     if (WURFL.is_mobile) {
-        $.scrollify.disable();
+        // $.scrollify.disable();
     }
 
     $(window).resize(function() {
