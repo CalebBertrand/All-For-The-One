@@ -48,7 +48,7 @@ $(document).ready(function () {
     $("#menu").css("padding-top", $("header").height() * 1.2);
     
 
-    if (WURFL.is_mobile) {
+    if (WURFL.form_factor == "Smartphone") {
         $(".logo").hide();
         // $.scrollify.disable();
     }
