@@ -203,7 +203,8 @@ header {
   padding-right: 4.5%; }
   #menu ul {
     list-style-type: none;
-    text-align: right; }
+    text-align: right;
+    padding-top: 4.5; }
     #menu ul li a {
       color: #f5f6f8;
       font-size: 2.6rem;
