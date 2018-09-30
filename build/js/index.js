@@ -49,6 +49,7 @@ $(document).ready(function () {
     
 
     if (WURFL.is_mobile) {
+        $(".logo").hide();
         // $.scrollify.disable();
     }
 
