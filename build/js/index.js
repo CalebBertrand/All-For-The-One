@@ -1,7 +1,7 @@
 $(document).ready(function () {
     
-    var backgroundOffset = 0.08;
-    var backgroundImageHeight = $(".background-image").height();
+    // var backgroundOffset = 0.08;
+    // var backgroundImageHeight = $(".background-image").height();
 
     // $(document).scroll(function() {
 
@@ -17,10 +17,10 @@ $(document).ready(function () {
         var newSize;
         
         if (window.innerWidth > window.innerHeight) {
-            newSize = window.innerWidth * (1 + backgroundOffset);
+            newSize = window.innerWidth;
             
         }else {
-            newSize = window.innerHeight * (1 + backgroundOffset);
+            newSize = window.innerHeight;
             
         }
 
@@ -47,14 +47,12 @@ $(document).ready(function () {
 
     if (WURFL.form_factor == "Smartphone") {
         $(".logo").hide();
-        // $.scrollify.disable();
     }
 
     $(window).resize(function() {
         
         if (WURFL.form_factor == "Smartphone") {
             $(".logo").hide();
-            // $.scrollify.disable();
         }
 
 
