@@ -1,20 +1,17 @@
 $(document).ready(function () {
     
     var backgroundOffset = 0.08;
+    var backgroundImageHeight = $(".background-image").height();
 
-    $(document).scroll(function() {
+    // $(document).scroll(function() {
 
-        var differenceFromScreenToImage;
-
-        if (window.innerWidth > window.innerHeight) {
-            differenceFromScreenToImage = window.innerWidth * (backgroundOffset);
-        } else {
-            differenceFromScreenToImage = window.innerHeight * (backgroundOffset);
-        }
-        var percentDownScreen = $(document).scrollTop() / $(document).height();
+    //     var differenceFromScreenToImage = Math.abs($(document).height() - $(".background-image").height() * (1 + backgroundOffset));
+    //     console.log(differenceFromScreenToImage);
         
-        $(".background-image").css("top", 0 - percentDownScreen * differenceFromScreenToImage * 1.25);
-    });
+    //     var percentDownScreen = $(document).scrollTop() / $(document).height();
+        
+    //     $(".background-image").css("top", 0 - percentDownScreen * differenceFromScreenToImage);
+    // });
 
     function resizeBackground() {
         var newSize;
@@ -54,6 +51,12 @@ $(document).ready(function () {
     }
 
     $(window).resize(function() {
+        
+        if (WURFL.form_factor == "Smartphone") {
+            $(".logo").hide();
+            // $.scrollify.disable();
+        }
+
 
         resizeBackground();
 
