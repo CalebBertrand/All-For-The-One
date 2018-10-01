@@ -41,7 +41,7 @@ $(document).ready(function () {
         ToggleMenu();
     });
 
-    $(".fullscreen").css("min-height", window.innerHeight);
+    $(".fullscreen").css("height", window.innerHeight);
     $("#menu").css("padding-top", $("header").height() * 1.2);
     
 
@@ -58,7 +58,7 @@ $(document).ready(function () {
 
         resizeBackground();
 
-        $(".fullscreen").css("min-height", window.innerHeight);
+        $(".fullscreen").css("height", window.innerHeight);
         $("#menu").css("padding-top", $("header").height() * 1.2);
     });
 }); 
