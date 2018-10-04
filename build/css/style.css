@@ -136,15 +136,16 @@ body {
 .grid-frame {
   z-index: 1; }
 
+#section-2, #section-3, #section-4, #section-6 {
+  padding-top: 75px; }
+
 @media not all and (max-width: 479px) {
   .section {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; }
   #section-1 {
-    padding-bottom: 50px; }
-  #section-2, #section-3, #section-4 {
-    padding-top: 50px; } }
+    padding-bottom: 50px; } }
 
 .background-image {
   position: fixed;
@@ -167,6 +168,9 @@ body#landing .section * {
   @media screen and (max-width: 767px) {
     .circle-image {
       max-width: 95%; } }
+
+.call-to-action {
+  margin-top: 5%; }
 
 header {
   position: fixed;
@@ -241,7 +245,7 @@ header {
   font-size: 1.05rem; }
 
 .custom-button.larger {
-  font-size: 1.25rem; }
+  font-size: 1.5rem; }
 
 .custom-button.white-button {
   background: transparent;

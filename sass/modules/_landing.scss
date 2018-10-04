@@ -10,6 +10,10 @@ body {
     z-index: 1;
 }
 
+#section-2, #section-3, #section-4, #section-6 {
+        padding-top: 75px;
+}
+
 @media not all and (max-width: $mobile-size) {
     .section {
         background-size: cover;
@@ -18,9 +22,6 @@ body {
     }
     #section-1 {
         padding-bottom: 50px;
-    }
-    #section-2, #section-3, #section-4 {
-        padding-top: 50px;
     }
 }
 
@@ -68,6 +69,10 @@ h1.hero-header {
     @media screen and (max-width: $tablet-size) {
         max-width: 95%;
     }
+}
+
+.call-to-action {
+    margin-top: 5%;
 }
 
 // .bracketed {
