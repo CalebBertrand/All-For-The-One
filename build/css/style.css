@@ -176,6 +176,9 @@ body#landing .section * {
 .call-to-action {
   margin-top: 5%; }
 
+.call-to-action .custom-button {
+  max-width: 950px; }
+
 header {
   position: fixed;
   top: 0;
@@ -242,8 +245,7 @@ header {
 .custom-button.expanded {
   display: block;
   width: 100%;
-  margin-right: 0;
-  margin-left: 0; }
+  margin: auto; }
 
 .custom-button.large {
   font-size: 1.05rem; }
