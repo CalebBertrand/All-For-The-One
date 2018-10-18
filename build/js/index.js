@@ -35,9 +35,9 @@ $(document).ready(function () {
     
     ToggleMenu();
     resizeBackground();
-    if ($.scrollify.current().id() != 'section-5') {
+    // if ($.scrollify.current().id() != 'section-5') {
         $("#building").hide();
-    }
+    // }
 
     $("#hamburger, #x, #menu, .logo").click(function() {
         ToggleMenu();
