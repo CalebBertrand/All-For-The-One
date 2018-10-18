@@ -37,11 +37,17 @@ body#landing .section * {
     color: $background-color;
 }
 
+.section {
+    position: relative;
+}
+
 #section-2, #section-4, #section-6 {
     background-color: $contrast-one;
 }
 
-
+.green {
+    color: $contrast-two !important;
+}
 
 .hero-centered {
     // @media screen and (max-width: $desktop-size) {

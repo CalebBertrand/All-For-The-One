@@ -131,6 +131,17 @@ strong.bracket {
   font-weight: 600;
   font-size: 1.2em; }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #3d495a;
+  color: #bdd840;
+  width: 100%; }
+  footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.65rem; }
+
 * {
   color: #3d495a; }
 
@@ -159,8 +170,14 @@ body {
 body#landing .section * {
   color: #f5f6f8; }
 
+.section {
+  position: relative; }
+
 #section-2, #section-4, #section-6 {
   background-color: #83c64b; }
+
+.green {
+  color: #bdd840 !important; }
 
 .hero-centered {
   padding-bottom: 150px; }
