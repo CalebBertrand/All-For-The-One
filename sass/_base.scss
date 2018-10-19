@@ -81,21 +81,21 @@ body { margin: 0;
     }
     h5 {
         
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         @media screen and (max-width: $tablet-size) {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
         @media screen and (max-width: $mobile_size) {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
         }
     }
     h6 {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
         @media screen and (max-width: $tablet-size) {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
         @media screen and (max-width: $mobile_size) {
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
     }
 

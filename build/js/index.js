@@ -50,7 +50,7 @@ $(document).ready(function () {
     if (WURFL.form_factor == "Smartphone") {
         $(".logo").hide();
     }
-
+    $(".section").css("min-height", window.innerHeight);
     $(window).resize(function() {
         
         if (WURFL.form_factor == "Smartphone") {
@@ -60,6 +60,7 @@ $(document).ready(function () {
 
         resizeBackground();
 
+        $(".section").css("min-height", window.innerHeight);
         $(".fullscreen").css("height", window.innerHeight);
         $("#menu").css("padding-top", $("header").height() * 1.2);
     });

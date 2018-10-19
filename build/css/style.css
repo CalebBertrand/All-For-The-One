@@ -57,21 +57,21 @@ body {
       body h4 {
         font-size: 1.6rem; } }
   body h5 {
-    font-size: 1.7rem; }
-    @media screen and (max-width: 767px) {
-      body h5 {
-        font-size: 1.5rem; } }
-    @media screen and (max-width: 479px) {
-      body h5 {
-        font-size: 1.4rem; } }
-  body h6 {
     font-size: 1.5rem; }
     @media screen and (max-width: 767px) {
-      body h6 {
+      body h5 {
+        font-size: 1.4rem; } }
+    @media screen and (max-width: 479px) {
+      body h5 {
         font-size: 1.3rem; } }
+  body h6 {
+    font-size: 1.35rem; }
+    @media screen and (max-width: 767px) {
+      body h6 {
+        font-size: 1.2rem; } }
     @media screen and (max-width: 479px) {
       body h6 {
-        font-size: 1.1rem; } }
+        font-size: 1rem; } }
 
 ul {
   list-style-type: none; }
@@ -171,7 +171,8 @@ body#landing .section * {
   color: #f5f6f8; }
 
 .section {
-  position: relative; }
+  position: relative;
+  overflow-y: hidden; }
 
 #section-2, #section-4, #section-6 {
   background-color: #83c64b; }
@@ -254,20 +255,23 @@ header {
       font-size: 2em; }
 
 .custom-button {
-  padding: 0.85em 1em;
-  margin: 0 0 1rem 0;
+  display: block;
+  margin: auto;
+  padding: 0.75rem 1rem;
+  margin-top: 0.8rem;
   -webkit-transition: background-color 0.3s ease-out, color 0.3s ease-out;
-  transition: background-color 0.3s ease-out, color 0.3s ease-out; }
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+  font-size: 1rem; }
 
 .custom-button.expanded {
-  display: block;
   width: 100%;
   margin: auto; }
 
 .custom-button.large {
-  font-size: 1.05rem; }
+  font-size: 1.2rem; }
 
 .custom-button.larger {
+  padding: 1.2rem 1.5rem;
   font-size: 1.5rem; }
 
 .custom-button.white-button {
@@ -279,6 +283,14 @@ header {
 .custom-button.white-button:hover {
   background-color: #f5f6f8;
   color: #3d495a !important; }
+
+@media screen and (max-width: 479px) {
+  .custom-button {
+    margin-top: 0.35rem; }
+  .custom-button.large {
+    font-size: 1.05rem; }
+  .custom-button.larger {
+    font-size: 1.25rem; } }
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
