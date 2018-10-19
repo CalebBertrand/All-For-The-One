@@ -151,7 +151,7 @@ body {
 .grid-frame {
   z-index: 1; }
 
-#section-2, #section-3, #section-4, #section-6 {
+#section-3, #section-4, #section-6 {
   padding-top: 75px; }
 
 @media not all and (max-width: 479px) {
