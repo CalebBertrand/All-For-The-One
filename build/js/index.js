@@ -50,18 +50,34 @@ $(document).ready(function () {
     if (WURFL.form_factor == "Smartphone") {
         $(".logo").hide();
     }
-    $(".section").css("min-height", window.innerHeight);
+    if (WURFL.form_factor == "Smartphone" || WURFL.form_factor == "Tablet") {
+        $.scrollify.disable();
+        $(".section").css("min-height", window.innerHeight);
+    }
+
     $(window).resize(function() {
-        
-        if (WURFL.form_factor == "Smartphone") {
-            $(".logo").hide();
+
+        if (WURFL.form_factor == "Smartphone" || WURFL.form_factor == "Tablet") {
+            $(".section").css("min-height", window.innerHeight);
         }
 
-
         resizeBackground();
-
-        $(".section").css("min-height", window.innerHeight);
         $(".fullscreen").css("height", window.innerHeight);
         $("#menu").css("padding-top", $("header").height() * 1.2);
+    });
+    $(window).scroll(function() {
+        if (WURFL.form_factor == "Smartphone" || WURFL.form_factor == "Tablet") {
+            if ($(window).scrollTop() + $(window).height() > $("#section-5").offset().top) {
+                if ($("#collage").is(":visible")) {
+                    $("#building").show();
+                    $("#collage").hide();
+                }
+                }else {
+                if (!$("#collage").is(":visible")) {
+                    $("#building").hide();
+                    $("#collage").show();
+                }
+            }
+        }
     });
 }); 
