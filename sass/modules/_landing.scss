@@ -2,8 +2,8 @@
     color: $text-color;
 }
 
-body {
-    // overflow-y: hidden;
+body#landing {
+    background-color: $contrast-one;
 }
 
 .grid-frame {

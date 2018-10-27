@@ -1,0 +1,48 @@
+body#gallery {
+    background-color: $background-color;
+}
+
+.tn {
+    cursor: pointer;
+    box-shadow: 0 1px 15px 0px #aaa;
+    transition: box-shadow 1s;
+    div.desc {
+        padding-top: 15px;
+    }
+}
+.tn:hover {
+    box-shadow: 0 1px 35px 0px #aaa;
+}
+
+.preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(10, 10, 10, 0.8);
+    div.desc * {
+        color: $text-color;
+        background-color: $background-color;
+    }
+    * {
+        background-color: transparent;
+        color: $background-color;
+    }
+    div.arrow h1, h2, h3, h4, h5, h6, #exitPreview {
+        cursor: pointer;
+    }
+}
+
+#exitPreview {
+    color: $background-color;
+    z-index: 100;
+    position: fixed;
+    top: 1.5%;
+    right: 1%;
+}
+
+.back {
+    padding-left: 15px;
+    padding-top: 15px;
+    text-align: center;
+    color: $text-color;
+}

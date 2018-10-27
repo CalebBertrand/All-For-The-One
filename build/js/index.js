@@ -13,6 +13,9 @@ $(document).ready(function () {
     //     $(".background-image").css("top", 0 - percentDownScreen * differenceFromScreenToImage);
     // });
 
+    var imageIndex = 1;
+    var numImages = 5;
+
     function resizeBackground() {
         var newSize;
         
@@ -26,8 +29,42 @@ $(document).ready(function () {
 
         $(".background-image").width(newSize).height(newSize);
     }
-    
-
+    $(".preview, #exitPreview").hide();
+    $(".tn").click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        $(".preview img").attr("src", $(this).find("img").attr("src"));
+        $(".preview div.desc").html($(this).children("div.desc").html());
+        $(".preview").fadeIn(600);
+        $("#exitPreview").show();
+        $("#hamburger").css("visibility", "hidden");
+        imageIndex = $(this).children("img").data("image-index");
+        
+    });
+    $("#exitPreview").click(function() {
+        $(".preview").fadeOut(600);
+        $("#hamburger").css("visibility", "visible");
+        $("#exitPreview").hide();
+    });
+    $(".preview .a-right").click(function () {
+        if (imageIndex < numImages) {
+            $(".preview img").attr("src", $('[data-image-index = "' + (imageIndex + 1) + '"]').attr("src"));
+            imageIndex++;
+        }else{
+            $(".preview img").attr("src", $('[data-image-index = "1"]').attr("src"));
+            imageIndex = 1;
+        }
+    });
+    $(".preview .a-left").click(function () {
+        if (imageIndex != 1) {
+            $(".preview img").attr("src", $('[data-image-index = "' + (imageIndex - 1) + '"]').attr("src"));
+            imageIndex--;
+        } else {
+            $(".preview img").attr("src", $('[data-image-index = "' + numImages + '"]').attr("src"));
+            imageIndex = numImages;
+        }
+    });
 
     function ToggleMenu() {
         $("#menu").fadeToggle(600);

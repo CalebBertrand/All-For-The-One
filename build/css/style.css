@@ -20,8 +20,7 @@
 
 body {
   margin: 0;
-  padding: 0;
-  background-color: #83c64b !important; }
+  padding: 0; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     padding-bottom: 6px; }
   body h1 {
@@ -145,6 +144,9 @@ footer {
 * {
   color: #3d495a; }
 
+body#landing {
+  background-color: #83c64b; }
+
 .grid-frame {
   z-index: 1; }
 
@@ -194,9 +196,56 @@ body#landing .section * {
 .call-to-action .custom-button {
   max-width: 950px; }
 
-header {
+body#gallery {
+  background-color: #f5f6f8; }
+
+.tn {
+  cursor: pointer;
+  -webkit-box-shadow: 0 1px 15px 0px #aaa;
+  box-shadow: 0 1px 15px 0px #aaa;
+  -webkit-transition: -webkit-box-shadow 1s;
+  transition: -webkit-box-shadow 1s;
+  transition: box-shadow 1s;
+  transition: box-shadow 1s, -webkit-box-shadow 1s; }
+  .tn div.desc {
+    padding-top: 15px; }
+
+.tn:hover {
+  -webkit-box-shadow: 0 1px 35px 0px #aaa;
+  box-shadow: 0 1px 35px 0px #aaa; }
+
+.preview {
   position: fixed;
   top: 0;
+  left: 0;
+  background-color: rgba(10, 10, 10, 0.8); }
+  .preview div.desc * {
+    color: #3d495a;
+    background-color: #f5f6f8; }
+  .preview * {
+    background-color: transparent;
+    color: #f5f6f8; }
+  .preview div.arrow h1, .preview h2, .preview h3, .preview h4, .preview h5, .preview h6, .preview #exitPreview {
+    cursor: pointer; }
+
+#exitPreview {
+  color: #f5f6f8;
+  z-index: 100;
+  position: fixed;
+  top: 1.5%;
+  right: 1%; }
+
+.back {
+  padding-left: 15px;
+  padding-top: 15px;
+  text-align: center;
+  color: #3d495a; }
+
+body#landing header {
+  position: fixed;
+  top: 0; }
+
+header {
   width: 100%;
   z-index: 100;
   padding: 15px; }
@@ -210,16 +259,16 @@ header {
       width: 85px;
       height: 85px; } }
 
-#hamburger {
+#hamburger, #exitPreview {
   cursor: pointer;
   width: 45px;
   height: 45px;
   margin-right: 45px; }
   @media screen and (max-width: 767px) {
-    #hamburger {
+    #hamburger, #exitPreview {
       margin-right: 15px; } }
   @media screen and (max-width: 479px) {
-    #hamburger {
+    #hamburger, #exitPreview {
       width: 35px;
       height: 35px; } }
 
