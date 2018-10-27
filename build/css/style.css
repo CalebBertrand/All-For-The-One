@@ -298,7 +298,10 @@ header {
       color: #bfc5d2; }
     #menu ul li a.minor {
       color: #bdd840;
-      font-size: 2em; }
+      font-size: 2rem; }
+      @media screen and (max-width: 767px) {
+        #menu ul li a.minor {
+          font-size: 1rem; } }
 
 .custom-button {
   display: block;

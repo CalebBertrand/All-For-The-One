@@ -74,7 +74,10 @@ header {
         }
         li a.minor {
             color: $contrast-two;
-            font-size: 2em;
+            font-size: 2rem;
+            @media screen and (max-width: $tablet_size) {
+                font-size: 1rem;
+            }
         }
         
     }
